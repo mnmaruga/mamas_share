@@ -22,3 +22,49 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## usersテーブル
+
+| Column   | Type    | Options     |
+| -------- | ------- | ----------- |
+| nickname | string  | null: false |
+| email    | string  | null: false |
+| password | string  | null: false |
+| age      | integer |             |
+| status   | integer |             |
+| profile  | text    | null: false |
+
+### Association
+
+- has_many :posts
+- has_many :comments
+
+## postsテーブル
+
+| Column  | Type       | Option                         |
+| ------- | ---------- | ------------------------------ |
+| user    | references | null: false, foreign_key: true |
+| room    | string     | null: false                    |
+| problem | text       | null: false                    |
+| detail  | text       | null: false                    |
+| react1  | integer    |                                |
+| react2  | integer    |                                |
+| react3  | integer    |                                |
+
+### Association
+
+- belongs_to :user
+- has_many :comments
+
+## commentsテーブル
+
+| Column  | Type       | Option                         |
+| ------- | ---------- | ------------------------------ |
+| user    | references | null: false, foreign_key: true |
+| post    | references | null: false, foreign_key: true |
+| comment | text       | null: false                    |
+
+## Association
+
+- belongs_to :user
+- belongs_to :post
