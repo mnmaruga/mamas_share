@@ -44,7 +44,7 @@ Things you may want to cover:
 | Column  | Type       | Option                         |
 | ------- | ---------- | ------------------------------ |
 | user    | references | null: false, foreign_key: true |
-| room    | string     | null: false                    |
+| room    | references | null: false, foreign_key: true |
 | problem | text       | null: false                    |
 | detail  | text       | null: false                    |
 | react1  | integer    |                                |
@@ -55,6 +55,18 @@ Things you may want to cover:
 
 - belongs_to :user
 - has_many :comments
+- belongs_to :room
+
+## roomsテーブル
+
+| Column  | Type       | Option                         |
+| ------- | ---------- | ------------------------------ |
+| genre   | string     | null: false                    |
+| post    | references | null: false, foreign_key: true |
+
+### Association
+
+- has_many :posts
 
 ## commentsテーブル
 
