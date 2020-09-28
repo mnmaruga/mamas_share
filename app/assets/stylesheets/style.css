@@ -1,0 +1,95 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header{
+  background-color: white;
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-logo{
+  height: 160px;
+}
+.user{
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  color: skyblue;
+  font-family: "M PLUS Rounded 1c";
+}
+a{
+  text-decoration: none;
+  color: #e68162;
+  font-weight: bold;
+}
+a:hover{
+  color: #e66048;
+}
+.user:hover{
+  color: rgb(59, 167, 235);
+}
+.user-icon{
+  height: 60px;
+  padding: 10px;
+}
+
+
+main{
+  background-color: #fadfd2;
+  width: 100vw;
+  height: calc(100vh - 100px - 80px);
+  box-shadow: 0 0 10px #ad5d52 inset;
+}
+.room-info{
+  height: 20%;
+  text-align: center;
+  padding-top: 50px;
+  font-family: "M PLUS Rounded 1c";
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 2px 3px #ad5d52;
+}
+.room-up,.room-down{
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  text-align: center;
+}
+.room-up{
+  align-items: flex-end;
+}
+.room-down{
+  align-items: flex-start;
+}
+.room-genre{
+  width: 20%;
+  height: 80%;
+  margin: 10px;
+  padding-top: 30px;
+  color: #e68162;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "M PLUS Rounded 1c";
+  background-color: white;
+  border: double 3px #e68162;
+  border-radius: 10px;/*角の丸み*/
+  box-shadow: 0 3px 6px rgba(36, 27, 26, 0.25);
+}
+.room-genre:hover{
+  background-color: #faf4f0;
+}
+
+footer{
+  background-color: white;
+  width: 100vw;
+  height: 80px;
+  text-align: center;
+}
+p{
+  color: lightgray;
+}
