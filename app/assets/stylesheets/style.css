@@ -22,12 +22,12 @@ header{
   color: skyblue;
   font-family: "M PLUS Rounded 1c";
 }
-a{
+.user-nav{
   text-decoration: none;
   color: #e68162;
   font-weight: bold;
 }
-a:hover{
+.user-nav:hover{
   color: #e66048;
 }
 .user:hover{
@@ -70,7 +70,7 @@ main{
   width: 20%;
   height: 80%;
   margin: 10px;
-  padding-top: 30px;
+  padding-top: 35px;
   color: #e68162;
   font-size: 25px;
   font-weight: bolder;
@@ -79,6 +79,7 @@ main{
   border: double 3px #e68162;
   border-radius: 10px;/*角の丸み*/
   box-shadow: 0 3px 6px rgba(36, 27, 26, 0.25);
+  text-decoration: none;
 }
 .room-genre:hover{
   background-color: #faf4f0;
