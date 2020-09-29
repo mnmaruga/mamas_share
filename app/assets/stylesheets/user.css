@@ -1,0 +1,111 @@
+.registration-main{
+  display: flex;
+  justify-content: center;
+  background-color: bisque;
+  box-shadow: 0 0 10px #ad5d52 inset;
+  width: 100%;
+  height: 100vh;
+}
+.form-wrap{
+  width: 80%;
+  margin: 20px;
+}
+.form-header,.sign-up-button{
+  color: white;
+  text-shadow: 0px 0px 3px #77553a;
+  font-family: "M PLUS Rounded 1c";
+}
+.form-header{
+  margin: 20px;
+  
+}
+.form-header-text{
+  margin: 0px;
+}
+.form-main{
+  width: 100%;
+  height: 60%;
+  padding: 30px;
+  display: flex;
+  background-color: white
+}
+.form-main-session{
+  width: 70%;
+  height: 40%;
+  padding: 30px;
+  display: flex;
+  background-color: white
+}
+.form-left,.form-right{
+  width: 50%;
+}
+.form-left-session{
+  width: 80%;
+}
+.form-group{
+  padding: 5px 0;
+}
+.form-text,.input-default{
+  color: #ad7b52;
+  font-weight: bolder;
+  font-family: "M PLUS Rounded 1c";
+}
+.indispensable{
+  color: #eb504b;
+  font-size: 10px;
+  font-family: "M PLUS Rounded 1c";
+}
+textarea{
+  width: 80%;
+  border-radius:10px;
+}
+.input-default{
+  width: 60%;
+  height: 40px;
+  border: 1px solid #ad7b52;
+  border-radius:10px;
+  resize: none;
+}
+.input-age{
+  width: 30%;
+  height: 40px;
+  line-height: 30px;
+  border: 1px solid #ad7b52;
+  resize: none;
+}
+.select-box{
+  width: 30%;
+  height: 40px;
+  line-height: 30px;
+  border-radius:10px;
+  border: 1px solid #ad7b52;
+}
+.input-profile{
+  width: 80%;
+  height: 130px;
+  border: 1px solid #ad7b52;
+  resize: none;
+}
+.info-text{
+  margin: 3px;
+  font-size: 13px;
+  color: rgb(197, 128, 110);
+}
+::placeholder, select {
+  color: rgb(252, 207, 189);
+}
+.register-btn{
+  width: 150px;
+  height: 40px;
+  margin: 30px;
+  color: white;
+  background-color: #d89c6b;
+  border-radius:7px;
+  border: 1px solid #d89c6b;
+  box-shadow: 1px 1px 0 rgb(230, 210, 182) inset,
+                0 0 4px #f0c6a4 inset,
+                2px 2px 4px #b69274;
+}
+.register-btn:hover{
+  background-color: #ca9060;
+}
