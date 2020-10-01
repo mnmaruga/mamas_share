@@ -1,0 +1,27 @@
+.room-post{
+  display: flex;
+  justify-content: center;
+}
+
+.serch-form{
+  width: 350px;
+  height: 30px;
+  margin: 10px;
+  padding-left: 10px;
+  border: 1px solid #e68162;
+  box-shadow: 1px 1px 0 rgb(230, 210, 182) inset,
+                0 0 4px #f0c6a4 inset,
+                2px 2px 4px #b69274;
+  border-radius:7px;
+}
+.search-btn{
+  height: 30px;
+  width: 80px;
+  border: 1px solid #e68162;
+  color: white;
+  background-color: #e68162;
+  box-shadow: 1px 1px 0 rgb(230, 210, 182) inset,
+                0 0 4px #f0c6a4 inset,
+                2px 2px 4px #b69274;
+  border-radius:7px;
+}
