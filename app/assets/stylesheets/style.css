@@ -44,6 +44,7 @@ main{
   width: 100vw;
   height: calc(100vh - 100px - 80px);
   box-shadow: 0 0 10px #ad5d52 inset;
+  overflow: scroll;
 }
 .room-info{
   height: 20%;

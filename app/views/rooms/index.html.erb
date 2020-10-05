@@ -28,14 +28,14 @@
   <main>
     <div class="room-info">-相談ルーム-</div>
     <div class="room-up">
-      <%= link_to "マタニティ", posts_path, class: "room-genre"%>
-      <%= link_to "出産のこと", "#", class: "room-genre"%>
-      <%= link_to "育児のこと", "#", class: "room-genre"%>
+      <%= link_to "マタニティ", posts_path(room: 1), class: "room-genre"%>
+      <%= link_to "出産のこと", posts_path(room: 2), class: "room-genre"%>
+      <%= link_to "育児のこと", posts_path(room: 3), class: "room-genre"%>
     </div>
     <div class="room-down">
-      <%= link_to "教育のこと", "#", class: "room-genre"%>
-      <%= link_to "家庭のこと", "#", class: "room-genre"%>
-      <%= link_to "その他", "#", class: "room-genre"%>
+      <%= link_to "教育のこと", posts_path(room: 4), class: "room-genre"%>
+      <%= link_to "家庭のこと", posts_path(room: 5), class: "room-genre"%>
+      <%= link_to "その他", posts_path(room: 6), class: "room-genre"%>
     </div>
   </main>
   <footer>
@@ -44,5 +44,3 @@
     </p>
   </footer>
 </div>
-
-  <div></div>
