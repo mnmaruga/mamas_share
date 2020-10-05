@@ -6,6 +6,5 @@ class PostsController < ApplicationController
     @posts4 = Post.where(room: 4).order("created_at DESC")
     @posts5 = Post.where(room: 5).order("created_at DESC")
     @posts6 = Post.where(room: 6).order("created_at DESC")
-    #binding.pry
   end
 end
