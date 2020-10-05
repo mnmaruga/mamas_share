@@ -26,10 +26,164 @@
     </div>
   </header>
   <main class="room-post">
-    <%= form_with url:'' do |form|%>
-      <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "serch-form" %>
-      <%= form.submit "検索", class: "search-btn" %>
-    <% end %>
+    <div class="room-title">
+      -
+      <% if params[:room] == "1" %>
+        マタニティママ
+      <% elsif params[:room] == "2" %>
+        出産
+      <% elsif params[:room] == "3" %>
+        育児
+      <% elsif params[:room] == "4" %>
+        教育
+      <% elsif params[:room] == "5" %>
+        家庭
+      <% elsif params[:room] == "6" %>
+        その他
+      <% end %>
+      の相談ルーム -
+    </div>
+    <div class="serch">
+      <%= form_with url:'' do |form|%>
+        <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "serch-form" %>
+        <%= form.submit "検索", class: "search-btn" %>
+      <% end %>
+    </div>
+    <div class="posts">
+      <% if params[:room] == "1" %>
+        <% if @posts1 == [] %>
+          <div class="posts-nil">
+            投稿がまだありません
+          </div>
+        <% end %>
+        <% @posts1.each do |post|%>       
+          <%= link_to '#', class: "post-link" do %>
+          <div class="post">
+            <div class="post-head">
+              <div class="post-title"><%= post.problem %></div>
+            </div>
+            <div class="post-main">
+              <div class="post-detail"><%= post.detail %></div>
+            </div>
+            <div class="post-foot">
+              <div class="post-user"><%= post.user.nickname %></div>
+            </div>
+            <div class="detail-info">（クリックで詳細・コメントを表示）</div>
+          </div>
+          <% end %>
+        <% end %>
+      <% elsif params[:room] == "2" %>
+        <% if @posts2 == [] %>
+          <div class="posts-nil">
+            投稿がまだありません
+          </div>
+        <% end %>
+        <% @posts2.each do |post|%>       
+          <%= link_to '#', class: "post-link" do %>
+          <div class="post">
+            <div class="post-head">
+              <div class="post-title"><%= post.problem %></div>
+            </div>
+            <div class="post-main">
+              <div class="post-detail"><%= post.detail %></div>
+            </div>
+            <div class="post-foot">
+              <div class="post-user"><%= post.user.nickname %></div>
+            </div>
+            <div class="detail-info">（クリックで詳細・コメントを表示）</div>
+          </div>
+          <% end %>
+        <% end %>
+      <% elsif params[:room] == "3" %>
+        <% if @posts3 == [] %>
+          <div class="posts-nil">
+            投稿がまだありません
+          </div>
+        <% end %>
+        <% @posts3.each do |post|%>
+          <%= link_to '#', class: "post-link" do %>
+          <div class="post">
+            <div class="post-head">
+              <div class="post-title"><%= post.problem %></div>
+            </div>
+            <div class="post-main">
+              <div class="post-detail"><%= post.detail %></div>
+            </div>
+            <div class="post-foot">
+              <div class="post-user"><%= post.user.nickname %></div>
+            </div>
+            <div class="detail-info">（クリックで詳細・コメントを表示）</div>
+          </div>
+          <% end %>
+        <% end %>
+      <% elsif params[:room] == "4" %>
+        <% if @posts4 == [] %>
+          <div class="posts-nil">
+            投稿がまだありません
+          </div>
+        <% end %>
+        <% @posts4.each do |post|%>
+          <%= link_to '#', class: "post-link" do %>
+          <div class="post">
+            <div class="post-head">
+              <div class="post-title"><%= post.problem %></div>
+            </div>
+            <div class="post-main">
+              <div class="post-detail"><%= post.detail %></div>
+            </div>
+            <div class="post-foot">
+              <div class="post-user"><%= post.user.nickname %></div>
+            </div>
+            <div class="detail-info">（クリックで詳細・コメントを表示）</div>
+          </div>
+          <% end %>
+        <% end %>
+      <% elsif params[:room] == "5" %>
+        <% if @posts5 == [] %>
+          <div class="posts-nil">
+            投稿がまだありません
+          </div>
+        <% end %>
+        <% @posts5.each do |post|%>
+          <%= link_to '#', class: "post-link" do %>
+          <div class="post">
+            <div class="post-head">
+              <div class="post-title"><%= post.problem %></div>
+            </div>
+            <div class="post-main">
+              <div class="post-detail"><%= post.detail %></div>
+            </div>
+            <div class="post-foot">
+              <div class="post-user"><%= post.user.nickname %></div>
+            </div>
+            <div class="detail-info">（クリックで詳細・コメントを表示）</div>
+          </div>
+          <% end %>
+        <% end %>
+      <% elsif params[:room] == "6" %>
+        <% if @posts6 == [] %>
+          <div class="posts-nil">
+            投稿がまだありません
+          </div>
+        <% end %>
+        <% @posts6.each do |post|%>
+          <%= link_to '#', class: "post-link" do %>
+          <div class="post">
+            <div class="post-head">
+              <div class="post-title"><%= post.problem %></div>
+            </div>
+            <div class="post-main">
+              <div class="post-detail"><%= post.detail %></div>
+            </div>
+            <div class="post-foot">
+              <div class="post-user"><%= post.user.nickname %></div>
+            </div>
+            <div class="detail-info">（クリックで詳細・コメントを表示）</div>
+          </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
   </main>
   <footer>
     <p>
@@ -37,5 +191,3 @@
     </p>
   </footer>
 </div>
-
-  <div></div>
