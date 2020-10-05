@@ -5,7 +5,7 @@ class Post < ApplicationRecord
   # with_options presence :true do
   #   validates :user
   #   validates :room
-  #   validates :problem ,length: { max: 20 } 
+  #   validates :problem ,length: { max: 20 }
   #   validates :detail
   # end
 end
