@@ -1,7 +1,7 @@
 <div class="wrapper">
   <header class="header">
     <div class="title">
-      <a href="#">
+      <a href="/">
         <img class="title-logo" src="/assets/title2.jpg" alt="title">
       </a>
     </div>
@@ -25,18 +25,11 @@
       </div>
     </div>
   </header>
-  <main>
-    <div class="room-info">-相談ルーム-</div>
-    <div class="room-up">
-      <%= link_to "マタニティ", posts_path, class: "room-genre"%>
-      <%= link_to "出産のこと", "#", class: "room-genre"%>
-      <%= link_to "育児のこと", "#", class: "room-genre"%>
-    </div>
-    <div class="room-down">
-      <%= link_to "教育のこと", "#", class: "room-genre"%>
-      <%= link_to "家庭のこと", "#", class: "room-genre"%>
-      <%= link_to "その他", "#", class: "room-genre"%>
-    </div>
+  <main class="room-post">
+    <%= form_with url:'' do |form|%>
+      <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "serch-form" %>
+      <%= form.submit "検索", class: "search-btn" %>
+    <% end %>
   </main>
   <footer>
     <p>
