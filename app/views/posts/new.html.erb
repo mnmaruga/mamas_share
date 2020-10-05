@@ -26,6 +26,23 @@
     </div>
   </header>
   <main class="post-new-main">
+    <div class="room-title">
+      -
+      <% if params[:room] == "1" %>
+        マタニティママ
+      <% elsif params[:room] == "2" %>
+        出産
+      <% elsif params[:room] == "3" %>
+        育児
+      <% elsif params[:room] == "4" %>
+        教育
+      <% elsif params[:room] == "5" %>
+        家庭
+      <% elsif params[:room] == "6" %>
+        その他
+      <% end %>
+      の相談ルーム -
+    </div>
     <div class="post-form">
       <%= form_with model: @post, url: '#', local: true do |f| %>
         <div class="problem-form">
@@ -38,6 +55,9 @@
           <%= f.submit "投稿する" ,class:"post-btn" %>
         </div>
       <% end %>
+    </div>
+    <div class="back-btn">
+      <%= link_to "ルームへ戻る", :back ,class:"back-btn" %>
     </div>
   </main>
   <footer>
