@@ -13,7 +13,12 @@ class PostsController < ApplicationController
   end
 
   def create
-    Post.create(post_params)
+    @post = Post.new(post_params)
+    if @post.save
+      redirect_to posts_path(room: post_params[:room])
+    else
+      redirect_back(fallback_location: new_post_path)
+    end
   end
 
   private
