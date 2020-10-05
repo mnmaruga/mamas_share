@@ -6,6 +6,6 @@ class Post < ApplicationRecord
     validates :user
     validates :room
     validates :problem, length: { maximum: 40 }
-    validates :detail,  length: { maximum: 40 }
+    validates :detail,  length: { maximum: 400 }
   end
 end

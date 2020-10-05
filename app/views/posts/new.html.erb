@@ -44,12 +44,13 @@
       の相談ルーム -
     </div>
     <div class="post-form">
-      <%= form_with model: @post, url: '#', local: true do |f| %>
+      <%= form_with model: @post, url: posts_path, local: true do |f| %>
+        <%= f.hidden_field :room, :value => params[:room] %>
         <div class="problem-form">
           <%= f.text_area :problem, class:"problem-input", id:"", placeholder:"タイトル文（40字以内)", maxlength:"40" %>
         </div>
         <div class="detail-form">
-          <%= f.text_area :problem, class:"detail-input", id:"", placeholder:"相談内容（400字以内)", maxlength:"40" %>
+          <%= f.text_area :detail, class:"detail-input", id:"", placeholder:"相談内容（400字以内)", maxlength:"400" %>
         </div>
         <div class="post-submit">
           <%= f.submit "投稿する" ,class:"post-btn" %>

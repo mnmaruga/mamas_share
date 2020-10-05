@@ -5,9 +5,9 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.integer :room,    null: false
       t.text :problem,    null: false
       t.text :detail,     null: false
-      t.integer :react1,  null: false
-      t.integer :react2,  null: false
-      t.integer :react3,  null: false
+      t.integer :react1
+      t.integer :react2
+      t.integer :react3
       t.timestamps
     end
   end
