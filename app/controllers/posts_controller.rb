@@ -7,4 +7,8 @@ class PostsController < ApplicationController
     @posts5 = Post.where(room: 5).order('created_at DESC')
     @posts6 = Post.where(room: 6).order('created_at DESC')
   end
+
+  def new
+    @post = Post.new
+  end
 end

@@ -4,11 +4,18 @@
   flex-direction: column;
   font-family: "M PLUS Rounded 1c";
 }
+.room-title{
+  margin: 15px;
+  font-size: 30px;
+  color: aliceblue;
+  text-shadow: 1px 2px 3px #ad5d52;
+}
+
 
 .serch-form{
   width: 300px;
   height: 25px;
-  margin: 10px 0 30px 0;
+  margin: 10px 0;
   padding-left: 10px;
   border: 1px solid #e68162;
   box-shadow: 1px 1px 0 rgb(230, 210, 182) inset,
@@ -31,12 +38,24 @@
   background-color: #db7a5d;
 }
 
-.room-title{
-  margin: 15px;
-  font-size: 30px;
-  color: aliceblue;
-  text-shadow: 1px 2px 3px #ad5d52;
+
+.new-post{
+  width: 200px;
+  padding: 5px;
+  margin: 20px;
+  text-align: center;
+  color: #ad5d52;
+  border: 1px dotted #e68162;
+  background-color: white;
+  border-radius:7px;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px rgb(216, 196, 179) inset,
+                0 0 4px #b6a08f inset;
 }
+.new-post:hover{
+  background-color: rgb(253, 251, 234);
+}
+
 .posts{
   width: 600px;
 }

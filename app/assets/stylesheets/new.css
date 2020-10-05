@@ -1,0 +1,57 @@
+.post-new-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  height: 400px;
+  width: 600px;
+  border-radius: 30px;
+  background-color: white;
+}
+.problem-input{
+  height: 50px;
+  width: 500px;
+  padding: 5px 20px;
+  margin: 5px;
+  border: 2px dotted rgb(230, 216, 211);
+  resize: none;
+  font-size: 17px;
+  box-shadow: 1px 1px 5px rgb(236, 234, 232) inset,
+              0 0 4px #d1c8c4 inset;
+  font-family: "M PLUS Rounded 1c";
+}
+.detail-input{
+  height: 200px;
+  width: 500px;
+  padding: 5px 20px;
+  margin: 5px;
+  border: 2px dotted rgb(230, 216, 211);
+  resize: none;
+  font-size: 17px;
+  box-shadow: 1px 1px 5px rgb(236, 234, 232) inset,
+              0 0 4px #d1c8c4 inset;
+  font-family: "M PLUS Rounded 1c";
+}
+.post-btn{
+  margin: 10px;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #e68162;
+  box-shadow: 1px 1px 0 rgb(230, 210, 182) inset,
+              0 0 4px #f0c6a4 inset,
+              0 0 4px #b69274;
+}
+.post-btn:hover{
+  background-color: #db7a5d;
+}

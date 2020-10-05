@@ -52,6 +52,10 @@
       <% end %>
     </div>
     
+    <%= link_to new_post_path(room: params[:room]), class:"" do %>
+      <div class="new-post">投稿する</div>
+    <% end %>
+
     <div class="posts">
       <% if params[:room] == "1" %>
         <% if @posts1 == [] %>
