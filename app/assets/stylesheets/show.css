@@ -1,0 +1,102 @@
+.post-show{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 5px 0 0 0;
+  padding: 25px 50px;
+  background-color: white;
+  border: 2px dotted #e68162;
+  border-radius: 40px;
+  color: #ad5d52;
+}
+.post-username{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.react{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 5px;
+}
+.react1, .react2, .react3{
+  height: 50px;
+  width: 50px;
+  padding-top: 10px;
+  margin-left: 4px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: wheat;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #ad5d52;
+  box-shadow: 1px 1px 2px white inset,
+              0 0 4px #f0c6a4 inset,
+              0 0 4px #b69274;
+}
+.react1:hover, .react2:hover, .react3:hover{
+  background-color: rgb(238, 211, 162);
+}
+.react-count{
+  color: rgb(235, 208, 159);
+}
+
+.comments{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 10px 0 0 0;
+  padding: 15px 50px;
+  background-color: white;
+  border: 2px dotted #e68162;
+  border-radius: 40px;
+  color: #ad5d52;
+}
+.post-comment,.comment-index{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5px 0 0 0;
+  padding: 0 50px;
+  border-radius: 40px;
+  color: #ad5d52;
+}
+.comment-title{
+  margin-bottom: 5px;
+}
+.comment-input{
+  height: 70px;
+  width: 500px;
+  padding: 8px;
+  resize: none;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 0 8px rgb(207, 202, 199) inset;
+}
+.comment-btn{
+  width: 100px;
+  color: #f0c6a4;
+  background-color: rgba(255, 255, 255, 0.932);
+  border-radius: 7px;
+  border: 1px dotted #aca9a9;
+  box-shadow: 2px 2px 3px white inset,
+              0 0 4px #d3d3d2 inset,
+              0 0 5px #c4c4c4;
+}
+.comment-btn:hover{
+  background-color: whitesmoke;
+}
+
+.comment-index{
+  margin-top: 30px;
+}
+.comment{
+  width: 500px;
+  padding: 8px;
+  margin-bottom: 15px;
+  resize: none;
+  border-radius: 7px;
+  box-shadow: 0 0 8px rgb(207, 202, 199) inset;
+  color: #f0c6a4;
+}

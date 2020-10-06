@@ -1,0 +1,81 @@
+<div class="wrapper">
+  <header class="header">
+    <div class="title">
+      <a href="/">
+        <img class="title-logo" src="/assets/title2.jpg" alt="title">
+      </a>
+    </div>
+    <div class="user">
+      <div>
+        <% if user_signed_in? %>
+          <div class="user-nav">
+            <%= link_to "マイページ", "#", class: "user-nav"%>
+          </div>
+          <div class="user-nav">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "user-nav"%>
+          </div>
+        <% else %>
+          <div class="user-nav">
+            <%= link_to "ログイン", new_user_session_path, class: "user-nav"%>
+          </div>
+          <div class="user-nav">
+            <%= link_to "新規登録", new_user_registration_path, class: "user-nav"%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </header>
+  <main class="post-new-main">
+    <div class="room-title">- 投稿詳細 -</div>
+    
+    <div>
+      <div class="post-show">
+        <div class="post-head">
+          <div class="post-username"><%= @post.user.nickname %>さんの投稿</div>
+          <div class="post-title"><%= @post.problem %></div>
+        </div>
+        <div class="post-main">
+          <div class="post-detail"><%= @post.detail %></div>
+        </div>
+        <div class="post-foot">
+          <div class="react">
+            <div class="react1">d(￣ ￣)<br>わかる</div><div class="react-count">0</div>
+            <div class="react2">o(￣^￣)o<br>がんばれ</div><div class="react-count">0</div>
+            <div class="react3">( ͡° ͜ʖ ͡°)<br>ふむふむ</div><div class="react-count">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comments">
+      <div class="post-comment">
+        <div class="comment-title">[コメントを投稿する]</div>
+        <%= form_with  url: '#', local: true do |f| %>
+          <div class="comment-form">
+            <%= f.text_area :comment, class:"comment-input", id:"", placeholder:"(400字以内 ※空欄のままの投稿はできません)", maxlength:"400" %>
+          </div>
+          <div class="comment-submit">
+            <%= f.submit "投稿" ,class:"comment-btn" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="comment-index">
+        <div class="comment-title">[コメント一覧]</div>
+        <div class="comment">コメント</div>
+      </div>
+    </div>
+
+
+    <div></div>
+    
+
+    <div class="back-btn">
+      <%= link_to "相談ルームへ戻る", posts_path(room: @post.room), class:"back-btn" %>
+    </div>
+  </main>
+  <footer>
+    <p>
+      Copyright MamasShare 2020.
+    </p>
+  </footer>
+</div>
