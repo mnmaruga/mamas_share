@@ -52,6 +52,7 @@
         <div class="detail-form">
           <%= f.text_area :detail, class:"detail-input", id:"", placeholder:"相談内容（400字以内)", maxlength:"400" %>
         </div>
+        <div class="error-info">※空欄のままの投稿はできません</div>
         <div class="post-submit">
           <%= f.submit "投稿する" ,class:"post-btn" %>
         </div>
