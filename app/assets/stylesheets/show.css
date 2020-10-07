@@ -91,6 +91,10 @@
 .comment-index{
   margin-top: 30px;
 }
+.comment-head{
+  display: flex;
+  margin-bottom: 5px;
+}
 .comment{
   width: 500px;
   padding: 8px;
@@ -98,5 +102,12 @@
   resize: none;
   border-radius: 7px;
   box-shadow: 0 0 8px rgb(207, 202, 199) inset;
-  color: #f0c6a4;
+  color: #ad5d52;
+  text-align: start;
+}
+.comment-user{
+  text-decoration: underline;
+}
+.comment-main{
+  margin: 10px;
 }

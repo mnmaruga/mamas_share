@@ -61,7 +61,15 @@
       </div>
       <div class="comment-index">
         <div class="comment-title">[コメント一覧]</div>
-        <div class="comment">コメント</div>
+        <% @comments.each do |comment|%> 
+          <div class="comment">
+            <div class="comment-head">
+              <div class="comment-id"><%= comment.id %>.　</div>
+              <div class="comment-user"><%= comment.user.nickname %></div>
+            </div>
+            <div class="comment-main"><%= comment.comment %></div>
+          </div>
+        <% end %>
       </div>
     </div>
 
