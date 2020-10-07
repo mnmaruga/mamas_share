@@ -43,7 +43,7 @@ https://mamas-share.herokuapp.com/
 * Basic認証
   - ID: mamas
   - Password: 0501
-*テスト用アカウント
+* テスト用アカウント
   - Email: test@test
   - Password: test1234
 
