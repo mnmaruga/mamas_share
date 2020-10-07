@@ -186,18 +186,6 @@ https://mamas-share.herokuapp.com/
 
 - belongs_to :user
 - has_many :comments
-- belongs_to :room
-
-## roomsテーブル
-
-| Column  | Type       | Option                         |
-| ------- | ---------- | ------------------------------ |
-| genre   | string     | null: false                    |
-| post    | references | null: false, foreign_key: true |
-
-### Association
-
-- has_many :posts
 
 ## commentsテーブル
 
