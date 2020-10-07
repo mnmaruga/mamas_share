@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :move_to_index
+
   def index
     @posts1 = Post.where(room: 1).order('created_at DESC')
     @posts2 = Post.where(room: 2).order('created_at DESC')
@@ -34,4 +36,9 @@ class PostsController < ApplicationController
     params.require(:post).permit(:room, :problem, :detail).merge(user_id: current_user.id)
   end
 
+  def move_to_index
+    unless user_signed_in?
+      redirect_to new_user_session_path
+    end
+  end
 end
