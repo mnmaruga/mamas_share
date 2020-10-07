@@ -39,9 +39,9 @@
         </div>
         <div class="post-foot">
           <div class="react">
-            <div class="react1">d(￣ ￣)<br>わかる</div><div class="react-count">0</div>
-            <div class="react2">o(￣^￣)o<br>がんばれ</div><div class="react-count">0</div>
-            <div class="react3">( ͡° ͜ʖ ͡°)<br>ふむふむ</div><div class="react-count">0</div>
+            <div class="react1">わかる</div><div class="react-count">0</div>
+            <div class="react2">がんばれ</div><div class="react-count">0</div>
+            <div class="react3">ふむふむ</div><div class="react-count">0</div>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@
     <div class="comments">
       <div class="post-comment">
         <div class="comment-title">[コメントを投稿する]</div>
-        <%= form_with  url: '#', local: true do |f| %>
+        <%= form_with model: [@post, @comment], local: true do |f| %>
           <div class="comment-form">
             <%= f.text_area :comment, class:"comment-input", id:"", placeholder:"(400字以内 ※空欄のままの投稿はできません)", maxlength:"400" %>
           </div>
@@ -72,10 +72,6 @@
         <% end %>
       </div>
     </div>
-
-
-    <div></div>
-    
 
     <div class="back-btn">
       <%= link_to "相談ルームへ戻る", posts_path(room: @post.room), class:"back-btn" %>
