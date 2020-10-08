@@ -123,7 +123,7 @@ https://mamas-share.herokuapp.com/
 - コメントは自分の投稿にも他ユーザーの投稿にも投稿できる。
 - コメントそれぞれにコメントしたユーザーとコメントidが表示される。
 
-[コメント機能GIF](https://i.gyazo.com/e6d191aff0fc94b0f18172df870b1a48.mp4)
+[コメント機能GIF](https://i.gyazo.com/ac67c19510d1b3ce38368d7fafbb64dc.mp4)
 
 # 実装予定の機能
 
@@ -218,8 +218,8 @@ $ bundle install
 で必要なGemをインストールする。
 
 ```
-$ rake db:create
-$ rake db:migrate
+$ rails db:create
+$ rails db:migrate
 ```
 でデータベースを作成し、テーブルを生成する。
 
