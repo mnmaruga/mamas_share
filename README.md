@@ -202,14 +202,10 @@ https://mamas-share.herokuapp.com/
 
 # ローカルでの動作方法
 
-- Rubyのバージョン
-  - 2.6.5
-- 導入したパッケージ
-  - gem 'rails_12factor'
-  - gem 'active_hash'
-  - gem 'devise'
-  - gem 'rubocop'
+#### 開発環境
+Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello
 
+#### 動作方法
 ```
 $ git clone https://github.com/<user_name>/<project_name>.git
 ```
